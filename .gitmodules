@@ -10,9 +10,6 @@
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
 	url = https://github.com/mitechie/pyflakes-pathogen.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
@@ -27,4 +24,4 @@
 	url = http://github.com/tpope/vim-fugitive.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = https://github.com/ervandew/snipmate.vim
+	url = https://github.com/garbas/vim-snipmate.git
