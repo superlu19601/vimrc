@@ -1,0 +1,27 @@
+# Module Docstring
+snippet docs
+	"""
+	NAME:
+		%prog - ${1:brief}
+
+	SYNOPSIS:
+		%prog [options] ${2:}
+
+	DESCRIPTION:
+		${3:detail}
+
+	"""
+
+# if __name__ == "__main__":
+snippet ifmain
+	if __name__ == "__main__":
+		${1:pass}
+
+# option parser
+snippet parser
+	parser = OptionParser(usage=__doc__)
+
+# add_option
+snippet padd
+	parser.add_option("-${1:o}", "--${2:opt}",
+					  help="${3:help}")
