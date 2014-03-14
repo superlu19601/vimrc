@@ -213,7 +213,7 @@ map <F4> :Ack!
 " loosely following http://www.sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType python setlocal tw=79
+autocmd FileType python setlocal tw=79 colorcolumn=80
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
@@ -221,7 +221,7 @@ set completeopt=menuone,longest,preview
 """"""""""""""""""""""""""""""
 " => c/c++
 """""""""""""""""""""""""""""""
-autocmd FileType c,cpp,h,hpp setlocal tw=79 sw=2 tabstop=2
+autocmd FileType c,cpp,h,hpp setlocal tw=79 sw=2 tabstop=2 colorcolumn=80
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
