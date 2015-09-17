@@ -25,3 +25,20 @@ snippet parser
 snippet padd
 	parser.add_option("-${1:o}", "--${2:opt}",
 					  help="${3:help}")
+
+snippet logconf
+	if opts.logconf:
+		lconf.fileConfig(opts.logconf)
+	else:
+		logging.basicConfig(level=logging.INFO,
+			format="%(asctime)s - %(levelname)s - %(message)s")
+
+snippet startend
+	if opts.start:
+		opts.start = datetime.strptime(opts.start, "%Y%m%d").date()
+	else:
+		opts.start = datetime.now().date()
+	if opts.end:
+		opts.end = datetime.strptime(opts.end, "%Y%m%d").date()
+	else:
+		opts.end = opts.start + timedelta(days=1)
